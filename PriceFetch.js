@@ -12,4 +12,5 @@ const {
 
 const Provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.binance.org/")
 const factoryInstance = new ethers.Contract(FactoryAddress, factoryAbi, Provider )
-console.log(factoryInstance);
+const routerInstance = new ethers.Contract(RouterAddress, routerAbi, Provider )
+console.log(routerInstance);
