@@ -1,0 +1,1 @@
+const erc20 = ["function decimals() public view returns (uint8)"]
