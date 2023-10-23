@@ -1,4 +1,11 @@
 const FactoryAddress= "";
 const RouterAddress= "";
-const FromAddress= "";
-const ToAddress= "";
+const FromAddress= "";      //BUSD
+const ToAddress= "";        // BNB
+
+module.exports{
+    FactoryAddress,
+    RouterAddress,
+    FromAddress,
+    ToAddress
+}
