@@ -1,4 +1,5 @@
-const ethers = require("ethers")
+const {ethers, JsonRpcProvider} = require("ethers")
+
 const {
     FactoryAddress,
     RouterAddress,
@@ -11,3 +12,4 @@ const {
 
 const Provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.binance.org/")
 const factoryInstance = new ethers.Contract(FactoryAddress, factoryAbi, Provider )
+console.log(factoryInstance);
