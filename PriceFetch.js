@@ -8,7 +8,11 @@ const {
 } = require("./AddressList");
 const { erc20, factoryAbi, pairABI, routerAbi } = require("./Abiinfo");
 
-const Provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.binance.org/");
+// ========================= PANCAKE SWAP===============================//
+// const Provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.binance.org/");
+
+//==========================uniswap ====================================//
+const Provider = new ethers.providers.JsonRpcProvider("https://eth-mainnet.g.alchemy.com/v2/vcTD-zoE41OoKyny7NQmsTzsO2wpwFUh");
 // console.log(Provider);
 const factoryInstance = new ethers.Contract(
   FactoryAddress,
@@ -32,5 +36,6 @@ const priceFetch = async (humanFormat) => {
   const humanOutput = ethers.utils.formatUnits(amountsOut[1].toString(), decimal2)
   console.log(humanOutput); 
 };
-humanFormat = "100"
+// humanFormat = "100" // PANCAKE SWAP
+humanFormat = "100"// UNISWAP 
 priceFetch(humanFormat);
