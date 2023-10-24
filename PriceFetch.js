@@ -37,7 +37,10 @@ const priceFetch = async (humanFormat) => {
   console.log(humanOutput); 
 };
 
-// humanFormat = "100" // PANCAKE SWAP
-humanFormat = "1"// UNISWAP 
+//=========== PANCAKE SWAP Token Amount=================//
+// humanFormat = "100" 
+
+// ========== UNISWAP SWAP Token Amount=================//
+humanFormat = "1"
 
 priceFetch(humanFormat);
