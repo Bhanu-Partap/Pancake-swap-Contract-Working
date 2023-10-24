@@ -4,7 +4,7 @@ const {
     FactoryAddress,
     RouterAddress,
     FromAddress,
-    ToAddress
+    toAddress
 }= require("./AddressList")
 const {
     erc20, factoryAbi, pairABI, routerAbi
@@ -14,3 +14,12 @@ const Provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.bin
 const factoryInstance = new ethers.Contract(FactoryAddress, factoryAbi, Provider )
 const routerInstance = new ethers.Contract(RouterAddress, routerAbi, Provider )
 console.log(routerInstance);
+const priceFetch = async(amount)=>{
+    const token1 = new ethers.Contract(FromAddress, erc20 , Provider )
+    const token2 = new ethers.Contract(toAddress, erc20 , Provider )
+
+    const decimal1 = await token1.decimals()
+    console.log(decimal1);
+}
+
+priceFetch()
