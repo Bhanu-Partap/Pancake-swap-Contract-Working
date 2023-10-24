@@ -8,9 +8,7 @@ const {
 } = require("./AddressList");
 const { erc20, factoryAbi, pairABI, routerAbi } = require("./Abiinfo");
 
-const Provider = new ethers.providers.JsonRpcProvider(
-  "https://bsc-dataseed1.defibit.io/"
-);
+const Provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.defibit.io/");
 const factoryInstance = new ethers.Contract(
   FactoryAddress,
   factoryAbi,
