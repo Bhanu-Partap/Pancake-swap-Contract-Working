@@ -9,7 +9,7 @@ const {
 const { erc20, factoryAbi, pairABI, routerAbi } = require("./Abiinfo");
 
 const Provider = new ethers.providers.JsonRpcProvider(
-  "https://bsc-dataseed1.binance.org/"
+  "https://bsc-dataseed1.defibit.io/"
 );
 const factoryInstance = new ethers.Contract(
   FactoryAddress,
@@ -25,12 +25,12 @@ const priceFetch = async (humanFormat) => {
   const decimal1 = await token1.decimals();
   const decimal2 = await token2.decimals();
   const amountIn = ethers.utils.parseUnits(humanFormat,decimal1).toString();
-  const getAmountsOut = await routerInstance.getAmountsOut(amountIn, [
+  const amountsOut = await routerInstance.getAmountsOut(amountIn, [
     FromAddress,
     ToAddress,
   ]);
-  const humanOutput = ethers.utils.formatUnits(amountOut[1].toString(), decimal2)
-  console.log(humanOutput);
+  const humanOutput = ethers.utils.formatUnits(amountsOut[1].toString(), decimal2)
+  console.log(humanOutput); 
 };
 humanFormat = "100"
 priceFetch(humanFormat);
