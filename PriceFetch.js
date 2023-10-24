@@ -23,11 +23,14 @@ const priceFetch = async (humanFormat) => {
   const token2 = new ethers.Contract(ToAddress, erc20, Provider);
 
   const decimal1 = await token1.decimals();
-  const amountIn = ethers.utils.parseUnits(humanFormat.decimals).toString();
+  const decimal2 = await token2.decimals();
+  const amountIn = ethers.utils.parseUnits(humanFormat,decimal1).toString();
   const getAmountsOut = await routerInstance.getAmountsOut(amountIn, [
     FromAddress,
     ToAddress,
   ]);
+  const humanOutput = ethers.utils.formatUnits(amountOut[1].toString(), decimal2)
+  console.log(humanOutput);
 };
-
-priceFetch();
+humanFormat = "100"
+priceFetch(humanFormat);
