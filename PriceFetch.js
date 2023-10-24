@@ -36,6 +36,8 @@ const priceFetch = async (humanFormat) => {
   const humanOutput = ethers.utils.formatUnits(amountsOut[1].toString(), decimal2)
   console.log(humanOutput); 
 };
+
 // humanFormat = "100" // PANCAKE SWAP
-humanFormat = "100"// UNISWAP 
+humanFormat = "1"// UNISWAP 
+
 priceFetch(humanFormat);
