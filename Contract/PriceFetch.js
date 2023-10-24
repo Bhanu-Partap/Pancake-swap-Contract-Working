@@ -41,6 +41,6 @@ const priceFetch = async (humanFormat) => {
 // humanFormat = "100" 
 
 // ========== UNISWAP SWAP Token Amount=================//
-humanFormat = "1"
+const humanFormat = "1"
 
 priceFetch(humanFormat);
