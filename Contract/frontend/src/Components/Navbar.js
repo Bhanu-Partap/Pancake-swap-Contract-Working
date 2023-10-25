@@ -1,13 +1,14 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 export default function Navbar() {
   return (
   
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/">
             Price Fetch DAAP
-          </link>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,9 +23,9 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <link className="nav-link active center" to="/">
+                <Link className="nav-link active center" to="/">
                   Swap
-                </link>
+                </Link>
               </li>
             </ul>
           </div>
