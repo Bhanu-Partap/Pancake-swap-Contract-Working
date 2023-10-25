@@ -1,12 +1,12 @@
-import React from 'react'
-import {Col, Row} from "react-bootstrap"
-import { FcSettings } from 'react-icons/fc';
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import { FcSettings } from "react-icons/fc";
 
 export default function Homepage() {
   return (
     <>
       <section id="home">
-        <Row className='row row-1'>
+        <Row className="row row-1">
           <Col className='col col-1' >
             <Row className='mainrow'>
               <h3>Swap</h3>
@@ -20,5 +20,5 @@ export default function Homepage() {
         </Row>
       </section>
     </>
-    )
+  );
 }

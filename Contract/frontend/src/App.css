@@ -82,6 +82,6 @@ section{
 }
 
 .col-1{
-  width: 50%;
+  width: 100% ;
   border: 1px red solid;
 }
