@@ -38,3 +38,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* ======= NAVBAR ========= */
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
