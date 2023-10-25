@@ -46,3 +46,24 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+/* =======HomePage========= */
+.mainrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px red solid;
+  height: 50%; */
+}
+
+section{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.col-1{
+  width: 50%;
+  border: 1px red solid;
+}

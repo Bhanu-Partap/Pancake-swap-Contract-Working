@@ -7,8 +7,8 @@ export default function Homepage() {
     <>
       <section id="home">
         <Row>
-          <Col>
-            <Row>
+          <Col className='col col-1' >
+            <Row className='mainrow'>
               <h3>Swap</h3>
               <h3>Buy</h3>
               <p><FcSettings/></p>
