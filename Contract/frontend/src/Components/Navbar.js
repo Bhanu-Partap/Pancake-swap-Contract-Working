@@ -5,7 +5,7 @@ export default function Navbar() {
   
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" to="#">
+          <a className="navbar-brand" href="/">
             Price Fetch DAAP
           </a>
           <button
@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active center" aria-current="page" to="#">
+                <a className="nav-link active center" aria-current="page" href="/">
                   Swap
                 </a>
               </li>
