@@ -6,7 +6,7 @@ export default function Homepage() {
   return (
     <>
       <section id="home">
-        <Row>
+        <Row className='row row-1'>
           <Col className='col col-1' >
             <Row className='mainrow'>
               <h3>Swap</h3>

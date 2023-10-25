@@ -21,7 +21,7 @@ export default function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse item-nav" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link active center" to="/swap">
@@ -29,7 +29,7 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-            <Button className="btn">Connect</Button>
+            <Button className="btn-warning btn-1 " >Connect</Button>
           </div>
         </div>
       </nav>

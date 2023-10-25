@@ -47,13 +47,23 @@
   align-items: center;
 }
 
+.btn-1{
+  position: absolute;
+  right: 2%;
+}
+
+.item-nav{
+  display: flex;
+  align-items: center;
+}
+
 
 
 /* =======HomePage========= */
 .mainrow{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   /* border: 1px red solid;
   height: 50%; */
 }
@@ -61,6 +71,14 @@
 section{
   min-width: 100vw;
   min-height: 100vh;
+}
+
+.row-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .col-1{
