@@ -41,7 +41,7 @@
 
 /* ======= NAVBAR ========= */
 
-.center{
+.collapse a .center{
   display: flex;
   justify-content: center;
   align-items: center;
