@@ -4,7 +4,7 @@ import React from 'react'
 export default function swap() {
   return (
     <>
-      <h1>swap page</h1>
+      <h1 id='swap'>swap page</h1>
     </>
   )
 }
