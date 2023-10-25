@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import {Link} from "react-router-dom"
 
 export default function Navbar() {
@@ -28,6 +29,7 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
+            <Button className="btn">Connect</Button>
           </div>
         </div>
       </nav>
